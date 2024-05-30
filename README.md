@@ -19,7 +19,7 @@ The function `pick_file` displays the contents of a directory and waits
 for the user to select one of them, e.g.:
 
 ```julia
-using TerminalFilePicker
+using SimpleUI
 pick_file("."; pattern=r"[A-Za-z]*")
 ```
 
