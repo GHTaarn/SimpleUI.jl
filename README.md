@@ -28,8 +28,21 @@ The return value is the path of whichever file the user selected.
 ### The `yesno` function
 
 Other languages have similar functions: prompts the user to answer yes or no
-and returns the corresponding `Bool`.
+and returns the corresponding `Bool` e.g.:
+
+```julia
+using SimpleUI
+if yesno("Do you want to quit?")
+    exit()
+end
+```
 
 ### The `prompt` function
 
-Prompts the user for some string input with an optional default value.
+Prompts the user for some string input with an optional default value e.g.:
+
+```julia
+using SimpleUI
+write(prompt("Filename to save to", "HelloWorld.txt"), "Hello World!")
+```
+
