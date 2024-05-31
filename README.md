@@ -5,7 +5,7 @@ creating text based user interfaces.
 ## Installation
 ```julia
 import Pkg
-Pkg.add(url="https://github.com/GHTaarn/SimpleUI.jl")
+Pkg.add(url="https://github.com/GHTaarn/SimpleUI.jl", rev="release-0.1")
 ```
 
 ## Use
@@ -57,3 +57,28 @@ else
     println("The time is ", now() |> Time)
 end
 ```
+
+## Discussion & feedback
+
+As the technology behind this library is extremely simple, the strength of it
+lies in a good interface (API). Ideas and opinions on this are therefore
+greatly appreciated and can be submitted either as
+[issues](https://github.com/GHTaarn/SimpleUI.jl/issues),
+[discussions](https://github.com/GHTaarn/SimpleUI.jl/discussions) or
+[pull requests](https://github.com/GHTaarn/SimpleUI.jl/pulls).
+Regarding backwards compatibility,
+[Julias variant of semver](https://pkgdocs.julialang.org/v1/compatibility/#compat-pre-1.0)
+will be obeyed, but otherwise backwards compatibility will have very
+low priority until version 1.0. It is therefore
+
+[//]: # (Non-backwards compatible changes are a very real possibility, so it is)
+
+advisable to take this into account in the compat section of the
+`Project.toml` file, e.g.:
+
+```julia
+import Pkg
+Pkg.compat("SimpleUI", "0.1")
+```
+
+as this would limit the legal versions to 0.1.x releases and therefore no breaking changes.
