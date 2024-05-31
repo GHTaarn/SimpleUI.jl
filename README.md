@@ -10,8 +10,8 @@ Pkg.add(url="https://github.com/GHTaarn/SimpleUI.jl")
 
 ## Use
 
-At present there are three entrypoints: `pick_file`, `yesno` and `prompt`. All
-are described in more detail in their docstrings.
+At present there are four entrypoints: `pick_file`, `yesno`, `prompt` and
+`pause`. All are described in more detail in their docstrings.
 
 ### The `pick_file` function
 
@@ -45,3 +45,15 @@ using SimpleUI
 write(prompt("Filename to save to", "HelloWorld.txt"), "Hello World!")
 ```
 
+### The `pause` function
+
+Display a message and wait until the user presses the return key, e.g.:
+
+```julia
+using Dates, SimpleUI
+if Time(now()) > Time(12,0)
+    pause("It is too late to use this program")
+else
+    println("The time is ", now() |> Time)
+end
+```
