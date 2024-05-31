@@ -70,9 +70,6 @@ Regarding backwards compatibility,
 [Julias variant of semver](https://pkgdocs.julialang.org/v1/compatibility/#compat-pre-1.0)
 will be obeyed, but otherwise backwards compatibility will have very
 low priority until version 1.0. It is therefore
-
-[//]: # (Non-backwards compatible changes are a very real possibility, so it is)
-
 advisable to take this into account in the compat section of the
 `Project.toml` file, e.g.:
 
