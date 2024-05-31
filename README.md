@@ -27,8 +27,7 @@ The return value is the path of whichever file the user selected.
 
 ### The `yesno` function
 
-Other languages have similar functions: prompts the user to answer yes or no
-and returns the corresponding `Bool` e.g.:
+Prompts the user to answer yes or no and returns the corresponding `Bool` e.g.:
 
 ```julia
 using SimpleUI
