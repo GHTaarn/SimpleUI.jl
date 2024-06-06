@@ -45,6 +45,9 @@ using SimpleUI
 write(prompt("Filename to save to", "HelloWorld.txt"), "Hello World!")
 ```
 
+where `"HelloWorld.txt"` is the default `String` which will be returned by
+`prompt` if the user presses the return key without entering any input.
+
 ### The `pause` function
 
 Display a message and wait until the user presses the return key, e.g.:
