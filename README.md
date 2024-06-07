@@ -8,6 +8,13 @@ import Pkg
 Pkg.add(url="https://github.com/GHTaarn/SimpleUI.jl")
 ```
 
+or
+```julia
+using Pkg
+pkg"registry add https://github.com/GHTaarn/FreeRegistry"
+pkg"add SimpleUI"
+```
+
 ## Use
 
 At present there are four entrypoints: `pick_file`, `yesno`, `prompt` and
