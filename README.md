@@ -17,7 +17,7 @@ pkg"add SimpleUI"
 
 ## Use
 
-At present there are four entrypoints: `pick_file`, `yesno`, `prompt` and
+At present there are four entrypoints: `pick_file`, `yesno`, `promptget` and
 `pause`. All are described in more detail in their docstrings.
 
 ### The `pick_file` function
@@ -43,17 +43,17 @@ if yesno("Do you want to quit?")
 end
 ```
 
-### The `prompt` function
+### The `promptget` function
 
 Prompts the user for some string input with an optional default value e.g.:
 
 ```julia
 using SimpleUI
-write(prompt("Filename to save to", "HelloWorld.txt"), "Hello World!")
+write(promptget("Filename to save to", "HelloWorld.txt"), "Hello World!")
 ```
 
 where `"HelloWorld.txt"` is the default `String` which will be returned by
-`prompt` if the user presses the return key without entering any input.
+`promptget` if the user presses the return key without entering any input.
 
 ### The `pause` function
 
