@@ -1,7 +1,7 @@
 name = "SimpleUI"
 uuid = "7d5ddd29-585a-4ccb-ac42-b8c514ef29f6"
 authors = ["GHTaarn <62629455+GHTaarn@users.noreply.github.com>"]
-version = "0.2.0"
+version = "0.3.0-DEV"
 
 [deps]
 REPL = "3fa0cd96-eef1-5676-8a61-b3b8758bbffb"
