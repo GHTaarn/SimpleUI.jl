@@ -1,6 +1,6 @@
 module SimpleUI
 
-export pause, pick_file, prompt, yesno
+export pause, pick_file, promptget, yesno
 
 include("pause.jl")
 include("promptget.jl")
