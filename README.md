@@ -3,12 +3,14 @@ A [Julia](http://julialang.org) package with some very simple functions for
 creating text based user interfaces.
 
 ## Installation
+
+Directly from source:
 ```julia
 import Pkg
 Pkg.add(url="https://github.com/GHTaarn/SimpleUI.jl")
 ```
 
-or
+or using [FreeRegistry](https://github.com/GHTaarn/FreeRegistry):
 ```julia
 using Pkg
 pkg"registry add https://github.com/GHTaarn/FreeRegistry"
