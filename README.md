@@ -19,7 +19,8 @@ pkg"add SimpleUI"
 
 ## Use
 
-At present there are four entrypoints: `pick_file`, `yesno`, `promptget` and
+At present there are five entrypoints: `pick_file`, `pick_one`, `yesno`,
+`promptget` and
 `pause`. All are described in more detail in their docstrings.
 
 ### The `pick_file` function
@@ -33,6 +34,16 @@ pick_file("."; pattern=r"[A-Za-z]*")
 ```
 
 The return value is the path of whichever file the user selected.
+
+### The `pick_one` function
+
+This function displays a menu from which the user must choose one, e.g.:
+
+```julia
+using SimpleUI
+pick_one("Image quality:",
+    ["320x240", "640x480", "1280x960"])
+```
 
 ### The `yesno` function
 
