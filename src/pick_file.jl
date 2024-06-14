@@ -1,4 +1,4 @@
-using REPL.TerminalMenus
+using REPL.TerminalMenus: request, RadioMenu
 
 """
     pick_file(dir="."; pattern=r"", join=true)
