@@ -42,7 +42,7 @@ This function displays a menu from which the user must choose one, e.g.:
 ```julia
 using SimpleUI
 pick_one("Image quality:",
-    ["320x240", "640x480", "1280x960"])
+    ["320x240", "640x480", "1280x960"]; default=2)
 ```
 
 ### The `yesno` function
