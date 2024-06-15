@@ -19,14 +19,16 @@ For pull requests, please have the following in mind:
 
 ## For developers with write permission to the SimpleUI.jl Github repository:
 
- - Branches are named as in the Julia git repository:
+Branches are named as in the Julia git repository:
       - master : New feature development. All tests should pass. Version should be x.x.0-DEV
       - release-x.x : A stable release for each minor version, all tests should pass. Unlike the Julia repository, do not commit anything here unless it is verified release ready and has version x.x.x
- - Release procedure for x.x.0 releases:
+
+### Release procedure for x.x.0 releases:
+
    1. Inform everyone with write permission that you are starting the release procedure
    2. Run unit tests
    3. Read through README.md and try out all code examples to verify that they work
-   4. Instruct everyone with write permission to hold off commits to master until you give the green light & check that your master is up to date
+   4. Instruct everyone with write permission to hold off commits to master until you give the green light & check that your master is up to date (if not, consider repeating steps 2 & 3)
    5. Edit Project.toml changing version to x.x.0
    6. Create the branch release-x.x
    7. On the master branch, edit Project.toml and bump up its version to x.x.0-DEV (where the minor version is increased by one, or major version is increased by one and minor version is set to zero)
