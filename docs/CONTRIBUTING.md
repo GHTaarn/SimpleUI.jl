@@ -20,8 +20,9 @@ For pull requests, please have the following in mind:
 ## For developers with write permission to the SimpleUI.jl Github repository:
 
 Branches are named as in the Julia git repository:
-      - master : New feature development. All tests should pass. Version should be x.x.0-DEV
-      - release-x.x : A stable release for each minor version, all tests should pass. Unlike the Julia repository, do not commit anything here unless it is verified release ready and has version x.x.x
+
+ - master : New feature development. All tests should pass. Version should be x.x.0-DEV
+ - release-x.x : A stable release for each minor version, all tests should pass. Unlike the Julia repository, do not commit anything here unless it is verified release ready and has version x.x.x
 
 ### Release procedure for x.x.0 releases:
 
