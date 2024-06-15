@@ -35,11 +35,15 @@ For pull requests, please have the following in mind:
    10. Switch to the new release branch and run `LocalRegistry.register()` from `julia` to register the new version
    11. On Github, create a new release, giving release-x.x the tag vx.x.0
 
-The commandline part of the above can be summarised as:
+Steps 2 to 8 above can be summarised as:
 
 ```bash
 # PWD should be the project home directory directory
 git switch master
+git pull
+julia --project -e 'using Pkg; pkg"test"'
+# Verify code examples in README.md
+
 # The following line sets version to x.y.0 in Project.toml
 sed -i 's/\.0-DEV/.0/g' Project.toml
 git add Project.toml
