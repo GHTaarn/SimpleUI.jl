@@ -40,11 +40,13 @@ The commandline part of the above can be summarised as:
 ```bash
 # PWD should be the project home directory directory
 git switch master
-vi Project.toml # Set version to x.y.0
+# The following line sets version to x.y.0 in Project.toml
+sed -i 's/\.0-DEV/.0/g' Project.toml
 git add Project.toml
 git commit -m "Increased version to x.y.0"
 git branch release-x.y
-vi Project.toml # Set version to X.Y.0-DEV (where either X=x+1 and Y=0 or X=x and Y=y+1)
+# The following line sets version to X.Y.0-DEV in Project.toml (where either X=x+1 and Y=0 or X=x and Y=y+1)
+sed -i "s/x\\.y\\.0/X.Y.0-DEV/g" Project.toml
 git add Project.toml
 git commit -m "Increased version to X.Y.0-DEV"
 git push
