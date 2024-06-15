@@ -54,5 +54,6 @@ git push --set-upstream origin release-x.y
 julia -e "using LocalRegistry; register()"
 ```
 
-Visit https://github.com/GHTaarn/SimpleUI.jl/releases/new and create the new release. Make sure to set the branch to `release-x.y`
+Visit https://github.com/GHTaarn/SimpleUI.jl/releases/new and create the new
+release. Set the title to "SimpleUI.jl version x.y.0" and make sure to set the branch to `release-x.y`
 
