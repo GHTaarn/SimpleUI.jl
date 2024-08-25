@@ -19,8 +19,8 @@ pkg"add SimpleUI"
 
 ## Use
 
-At present there are five entrypoints: `pick_file`, `pick_one`, `yesno`,
-`promptget` and
+At present there are six entrypoints: `pick_file`, `pick_one`,
+`getsavefilename`, `yesno`, `promptget` and
 `pause`. All are described in more detail in their docstrings.
 
 ### The `pick_file` function
@@ -43,6 +43,16 @@ This function displays a menu from which the user must choose one, e.g.:
 using SimpleUI
 pick_one("Image quality:",
     ["320x240", "640x480", "1280x960"]; default=2)
+```
+
+### The `getsavefilename` function
+
+Prompts the user for a filename and checks if the filename is allowed
+and if it exists already, e.g.:
+
+```julia
+using SimpleUI
+getsavefilename("Enter a filename for saving"; isallowed=contains(r".jl$"))
 ```
 
 ### The `yesno` function
