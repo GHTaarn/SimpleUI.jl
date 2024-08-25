@@ -62,10 +62,11 @@ Prompts the user for some string input with an optional default value e.g.:
 
 ```julia
 using SimpleUI
-write(promptget("Filename to save to", "HelloWorld.txt"), "Hello World!")
+sleep(promptget(Float64, "How many seconds do you want to pause?", 5)))
+println("Hello ", promptget("Who do you want to say hello to?", "Julia"))
 ```
 
-where `"HelloWorld.txt"` is the default `String` which will be returned by
+where `5` and `"Julia"` are the default values which will be returned by
 `promptget` if the user presses the return key without entering any input.
 
 ### The `pause` function
