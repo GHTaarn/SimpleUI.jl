@@ -7,7 +7,4 @@ version = "0.4.0-DEV"
 REPL = "3fa0cd96-eef1-5676-8a61-b3b8758bbffb"
 
 [compat]
-julia = "1.5 - 1.11"
-# Upwards restriction on Julia because TerminalMenus is not public,
-# so the upper limit may be increased if `pick_file()` is tested
-# and works on the given version.
+julia = "1.5"
