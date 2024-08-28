@@ -7,6 +7,7 @@ If the user inputs the empty string and `default != nothing` then `default` is
 returned.
 Otherwise, if `type==String` then the user input is returned, otherwise the user
 input is parsed as `type`. If `type` is not specified, then it is assumed to be
+`typeof(default)` unless `default==nothing` in which case it is assumed to be
 `String`.
 """
 function promptget(type::DataType, promptstr::AbstractString, default=nothing)
@@ -26,4 +27,6 @@ function promptget(type::DataType, promptstr::AbstractString, default=nothing)
     end
 end
 
-promptget(promptstr::AbstractString, default=nothing) = promptget(String, promptstr, default)
+function promptget(promptstr::AbstractString, default=nothing)
+    promptget(default==nothing ? String : typeof(default), promptstr, default)
+end
