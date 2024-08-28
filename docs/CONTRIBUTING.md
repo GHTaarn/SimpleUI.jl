@@ -15,7 +15,7 @@ For pull requests, please have the following in mind:
  - Document exported symbols with docstrings
  - Try to use the existing style, even if it is not entirely your taste
  - If you make something that looks stupid at first glance, please explain it with a comment so that people are not tempted to tidy it in an incorrect way (if you make something that looks stupid and is stupid, please tidy it before submitting the pull request (unless it is meant as a mockup))
- - At present, the project has no tests, but you are welcome to submit tests
+ - If your contribution can be unit tested, please make sure that it is covered by a unit test (this is not necessary if the PR is meant as a mockup)
 
 ## For developers with write permission to the SimpleUI.jl Github repository:
 
