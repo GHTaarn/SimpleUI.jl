@@ -20,8 +20,8 @@ pkg"add SimpleUI"
 ## Use
 
 At present there are six entrypoints: `pick_file`, `pick_one`,
-`getsavefilename`, `yesno`, `promptget` and
-`pause`. All are described in more detail in their docstrings.
+`getsavefilename`, `yesno`, `promptget` and `pause`.
+All are described below and in more detail in their docstrings.
 
 ### The `pick_file` function
 
@@ -68,7 +68,7 @@ end
 
 ### The `promptget` function
 
-Prompts the user for some string input with an optional default value e.g.:
+Prompts the user for some input with an optional default value e.g.:
 
 ```julia
 using SimpleUI
