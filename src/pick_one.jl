@@ -7,8 +7,8 @@ Interactively display a message `msg` and a menu consisting of `options`
 and then return the index of the chosen option. `default` is the index of
 the default menu item.
 
-This function uses `Base.REPL.TerminalMenus.RadioMenu` and `kwargs` is
-passed on to that function.
+This function uses `TerminalMenus.RadioMenu` from the `REPL` standard library
+and `kwargs` is passed on to that function.
 """
 function pick_one(options::Vector{<:AbstractString}; default=1, kwargs...)
     request(RadioMenu(options; kwargs...); cursor=default)
