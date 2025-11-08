@@ -19,7 +19,7 @@ pkg"add SimpleUI"
 
 ## Use
 
-At present there are six entrypoints: `pick_file`, `pick_one`,
+At present there are seven entrypoints: `pick_file`, `pick_one`, `pick`
 `getsavefilename`, `yesno`, `promptget` and `pause`.
 All are described below and in more detail in their docstrings.
 
@@ -43,6 +43,16 @@ This function displays a menu from which the user must choose one, e.g.:
 using SimpleUI
 pick_one("Image quality:",
     ["320x240", "640x480", "1280x960"]; default=2)
+```
+
+### The `pick` function
+
+This function displays a menu from which the user must select 0 or more, e.g.:
+
+```julia
+using SimpleUI
+pick("Image quality:",
+    ["320x240", "640x480", "1280x960"])
 ```
 
 ### The `getsavefilename` function
